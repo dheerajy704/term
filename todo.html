@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Reset styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+h1, h2, h3 {
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+/* Navigation */
+nav {
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
+}
+
+nav ul li {
+  margin-right: 2rem;
+}
+
+nav ul li:last-child {
+  margin-right: 0;
+}
+
+nav ul li a {
+  font-size: 1.2rem;
+  font-weight: 500;
+  padding: 0.5rem;
+  transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+  background-color: #f1f1f1;
+}
+
+/* Hero section */
+.hero {
+  background-image: linear-gradient(to right bottom, rgba(1, 94, 150, 0.9), rgba(51, 156, 255, 0.9)), url('hero-background.jpg');
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5rem;
+}
+
+.hero h1 {
+  font-size: 4rem;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.5rem;
+  color: #fff;
+  margin-bottom: 2rem;
+}
+
+.hero-image {
+  flex-basis: 40%;
+}
+
+.hero-image img {
+  width: 100%;
+  animation: scale-up 1s ease-in-out forwards;
+}
+
+@keyframes scale-up {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.hero-content {
+  flex-basis: 50%;
+  animation: slide-in 1s ease-in-out forwards;
+}
+
+@keyframes slide-in {
+  0% {
+    transform: translateX(-50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.btn {
+  display: inline-block;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  border-radius: 2rem;
+  transition: all 0.3s ease;
+}
+
+.btn-primary {
+  background-color: #fff;
+  color: #333;
+  border: 2px solid #333;
+}
+
+.btn-secondary {
+  background-color: #333;
+  color: #fff;
+  border: 2px solid #333;
+  margin-left: 1rem;
+}
+
+.btn:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+/* Services section */
+
+    </style>
+</head>
+<body>
+    <!DOCTYPE html>
+    <html lang="en">
+    
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Netrix Digital</title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    
+    <body>
+        <!-- Navigation -->
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+    
+        <!-- Hero section -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Welcome to Netrix Digital</h1>
+                <p>We offer top-notch digital solutions for businesses of all sizes.</p>
+                <a href="#" class="btn btn-primary">Get Started</a>
+                <a href="#" class="btn btn-secondary">Learn More</a>
+            </div>
+            <div class="hero-image">
+                <img src="hero-image.png" alt="Hero image" />
+            </div>
+        </section>
+    
+        <!-- Services section -->
+        <section class="services">
+            <h2>Our Services</h2>
+            <div class="services-container">
+                <div class="service">
+                    <i class="fas fa-laptop-code"></i>
+                    <h3>Web Development</h3>
+                    <p>We develop responsive websites and web applications using the latest technologies.</p>
+                </div>
+                <div class="service">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h3>Mobile App Development</h3>
+                    <p>We develop native and hybrid mobile apps for iOS and Android platforms.</p>
+                </div>
+                <div class="service">
+                    <i class="fas fa-cloud"></i>
+                    <h3>Cloud Computing</h3>
+                    <p>We provide cloud computing services including cloud storage, backup, and server management.</p>
+                </div>
+            </div>
+        </section>
+    
+        <!-- About Us section -->
+        <section class="about-us">
+            <h2>About Us</h2>
+            <div class="about-us-container">
+                <div class="about-us-content">
+                    <p>We are a team of experienced digital professionals who are passionate about delivering top-notch
+                        solutions for businesses of all sizes. We pride ourselves on our attention to detail and our
+                        commitment to excellence.</p>
+                    <a href="#" class="btn btn-primary">Meet the Team</a>
+                </div>
+                <div class="about-us-image">
+                    <img src="about-us-image.jpg" alt="About Us image" />
+                </div>
+            </div>
+        </section>
+    
+        <!-- Contact Us section -->
+        <section class="contact-us">
+            <h2>Contact Us</h2>
+            <form>
+                <input type="text" placeholder="Name" />
+                <input type="email" placeholder="Email" />
+                <textarea placeholder="Message"></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2023 Netrix Digital. All rights reserved.</p>
+        </footer>
+    </body>
+    
+    </html>
+
+</body>
+</html>
